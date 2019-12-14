@@ -52,15 +52,21 @@ let html = `
     height: 32px;
     width: 32px;
     cursor: pointer;
+    -webkit-transition: background-color 0.4s;
+    -moz-transition:    background-color 0.4s;
+    -ms-transition:     background-color 0.4s;
+    -o-transition:      background-color 0.4s;
+    transition:         background-color 0.4s;
+}
+#release-notes-close:hover {
+    background-color: #f8f8f8;
+
 }
 #release-notes-close span {
     position: absolute;
     top: 5px;
     right: 10px;
     font-weight: bold;
-}
-#release-notes-close:hover {
-    background-color: #f8f8f8;
 }
 .release-notes-content {
     font-size: 0.9rem;
